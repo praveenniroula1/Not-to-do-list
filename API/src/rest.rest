@@ -1,0 +1,33 @@
+### Root Api
+GET http://localhost:8000/
+
+### Fetch all task
+GET http://localhost:8000/api/v1/task/
+
+
+### add new task
+POST http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+    "task": "eating",
+    "hr": 100
+}
+
+### Put vs Patch update task
+PATCH  http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+    "_id": "62c669766980d446dbabbcd1",
+    "type": "bad"
+}
+
+### delete
+DELETE http://localhost:8000/api/v1/task/
+Content-Type: application/json
+
+{
+    "IDS":[
+      "62c66b68fa4104b9fe62c49c" ]
+}
